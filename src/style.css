@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Space Grotesk', system-ui, sans-serif;
+    --color-onyx: #0D0D0D;
+    --color-blood-red: #E62E2E;
+    --color-gunmetal: #1A1A1A;
+    --color-silver: #A0A0A0;
+    --color-charcoal: #333333;
+}

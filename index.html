@@ -1,0 +1,859 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namith Scindhia - The Code Don</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="bg-onyx text-silver font-sans antialiased selection:bg-blood-red selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto p-6 flex items-center justify-center">
+      <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide uppercase text-silver">
+        <a href="#profile" class="hover:text-blood-red transition-colors">About</a>
+        <a href="#operations" class="hover:text-blood-red transition-colors">Projects</a>
+        <a href="#contracts" class="hover:text-blood-red transition-colors">Experience</a>
+        <a href="#equipment" class="hover:text-blood-red transition-colors">Skills</a>
+        <a href="#street-cred" class="hover:text-blood-red transition-colors">Recommendations</a>
+        <a href="#contact" class="hover:text-blood-red transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="app">
+    <!-- Hero Section -->
+    <header
+      class="relative w-full h-[700px] md:h-screen bg-[url('/hero.jpg')] bg-center bg-cover overflow-hidden flex items-center px-6">
+      <div class="absolute inset-0 bg-black/60 z-0"></div>
+      <div class="max-w-7xl mx-auto relative z-10 w-full">
+        <p class="text-xl md:text-2xl text-silver mb-2 font-medium tracking-wide">Hi, my name is</p>
+        <h1 class="text-6xl md:text-9xl font-bold tracking-tighter leading-none mb-4 text-white uppercase">
+          NAMITH <span class="text-transparent bg-clip-text bg-gradient-to-r from-blood-red to-red-800">SCINDHIA</span>
+        </h1>
+        <h2 class="text-2xl md:text-4xl font-bold tracking-tight text-white/90 mb-8 uppercase">
+          Forward Deployed Engineer
+        </h2>
+
+        <div class="border-l-4 border-blood-red pl-6 space-y-6">
+          <div>
+            <p class="text-xl text-silver mb-2">India</p>
+            <div class="flex items-center space-x-6 text-sm font-bold tracking-widest uppercase">
+              <a href="#" class="text-white hover:text-blood-red transition-colors flex items-center gap-2">
+                LinkedIn
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                  <path d="M7 7l10 10" />
+                  <path d="M17 7v10H7" />
+                </svg>
+              </a>
+              <a href="#" class="text-white hover:text-blood-red transition-colors flex items-center gap-2">
+                GitHub
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
+                  <path d="M7 7l10 10" />
+                  <path d="M17 7v10H7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="inline-block px-4 py-2 bg-blood-red/20 border border-blood-red text-blood-red font-bold tracking-wider uppercase text-sm rounded-sm">
+            Open to Hire
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Button -->
+      <a href="#profile"
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-silver/50 hover:text-blood-red transition-colors duration-300 z-20 animate-bounce"
+        aria-label="Scroll to content">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+          class="w-10 h-10">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+        </svg>
+      </a>
+      <!-- Background Elements -->
+      <div class="absolute top-0 right-0 w-1/2 h-full bg-blood-red/5 blur-[120px] rounded-full -z-0"></div>
+    </header>
+
+    <!-- Profile Section -->
+    <section id="profile" class="py-20 px-6 border-t border-charcoal">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div
+            class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-blood-red uppercase border border-blood-red/30 bg-blood-red/10 rounded-sm">
+            About
+          </div>
+          <div class="space-y-6 text-lg text-silver leading-relaxed">
+            <p>
+              Dynamic <span class="text-white font-bold">full-stack developer</span> and <span
+                class="text-white font-bold">AI-savvy technical leader</span> with 15+ years evolving from .NET backend
+              to
+              React/React Native and intelligent systems.
+            </p>
+            <p>
+              Started building backend services at <span class="text-white">Aditi Technologies</span>, then pivoted to
+              frontend with AngularJS → Angular 2.x → React across <span class="text-white">IMS Health, Evry India, and
+                Tavant</span>. Led teams through greenfield migrations (World Bank Group frontend, Pfizer healthcare
+              tools) and full-stack rebuilds (Fanova from Bubble/Xano to <span class="text-white">Expo +
+                Supabase</span>).
+            </p>
+            <p>
+              Excel at owning complex features end-to-end: authentication, payments, identity, currency, content
+              moderation, and file uploads. Ship <span class="text-white font-bold">production code</span> through agile
+              cycles with minimal rework.
+            </p>
+            <p>
+              Now leveraging AI across the stack: <span class="text-white">fault-tolerant systems</span>, intelligent
+              batch processing, predictive UI patterns. Use tools like <span
+                class="text-blood-red font-bold">OpenAI</span>, <span class="text-blood-red font-bold">Claude</span>,
+              and <span class="text-blood-red font-bold">Antigravity</span> to build resilient, user-centric solutions
+              2x faster.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative bg-gunmetal aspect-square rounded-2xl border border-charcoal p-2 flex items-center justify-center overflow-hidden group">
+          <img src="/profile-enhanced.png" alt="Profile"
+            class="w-full h-full object-cover rounded-xl opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
+          <div class="absolute inset-0 bg-gradient-to-t from-gunmetal via-transparent to-transparent opacity-40"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="operations" class="py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <div
+            class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-blood-red uppercase border border-blood-red/30 bg-blood-red/10 rounded-sm">
+            Projects
+          </div>
+          <h2 class="text-4xl md:text-6xl font-bold tracking-tight text-white">ENGINEERING OPERATIONS</h2>
+          <p class="mt-4 text-silver max-w-xl">
+            High-impact technical solutions deployed in complex environments.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Fanova -->
+          <article
+            class="group relative bg-gunmetal border border-charcoal hover:border-blood-red p-8 rounded-2xl transition-all duration-300 flex flex-col h-full hover:shadow-[0_0_30px_rgba(220,38,38,0.1)]">
+            <div class="mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blood-red transition-colors">Fanova</h3>
+              <div class="text-blood-red font-mono text-sm tracking-wide mb-4">Senior Software Engineer (React Native /
+                Full-stack)</div>
+              <p class="text-silver text-sm leading-relaxed mb-4">
+                Modernizing a creator-focused mobile and web platform by migrating from Xano/Bubble to a scalable Expo +
+                React Native stack with a robust backend on Supabase.
+              </p>
+            </div>
+
+            <div class="flex-grow mb-8">
+              <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-3">Highlights</h4>
+              <ul class="space-y-2 text-sm text-silver/80 list-disc pl-4 marker:text-blood-red">
+                <li>Led a full "lift-and-shift" migration of core user flows, improving performance, scalability, and
+                  maintainability.</li>
+                <li>Built a production-grade file upload experience using AWS S3, ImageKit, and Supabase Edge Functions.
+                </li>
+                <li>Implemented OpenAI-powered content moderation to automatically review user-generated text.</li>
+                <li>Re-architected payments into Supabase Edge Functions (Deno), covering complex subscription models.
+                </li>
+                <li>Integrated Persona for identity verification and WISE for real-time FX quotes.</li>
+                <li>Designed dynamic email workflows using Supabase email webhooks.</li>
+              </ul>
+            </div>
+
+            <div class="pt-6 border-t border-charcoal/50 mt-auto">
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-silver">
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">Expo</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">React
+                  Native</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">TypeScript</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">Supabase</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">AWS
+                  S3</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">OpenAI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- newpage.io -->
+          <article
+            class="group relative bg-gunmetal border border-charcoal hover:border-blood-red p-8 rounded-2xl transition-all duration-300 flex flex-col h-full hover:shadow-[0_0_30px_rgba(220,38,38,0.1)]">
+            <div class="mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blood-red transition-colors">newpage.io
+              </h3>
+              <div class="text-blood-red font-mono text-sm tracking-wide mb-4">Senior React / Frontend Engineer</div>
+              <p class="text-silver text-sm leading-relaxed mb-4">
+                Complete front-end rewrite of the marketing website to match a new design system and deliver
+                high-quality animations and performance.
+              </p>
+            </div>
+
+            <div class="flex-grow mb-8">
+              <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-3">Highlights</h4>
+              <ul class="space-y-2 text-sm text-silver/80 list-disc pl-4 marker:text-blood-red">
+                <li>Translated Figma designs into responsive, accessible pages using clean, semantic HTML.</li>
+                <li>Implemented smooth, high-impact animations and micro-interactions with GSAP.</li>
+                <li>Tuned layout, assets, and interaction patterns to significantly improve Lighthouse scores.</li>
+              </ul>
+            </div>
+
+            <div class="pt-6 border-t border-charcoal/50 mt-auto">
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-silver">
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">React</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">TypeScript</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">GSAP</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">Optimization</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Paxlovid Interaction Finder -->
+          <article
+            class="group relative bg-gunmetal border border-charcoal hover:border-blood-red p-8 rounded-2xl transition-all duration-300 flex flex-col h-full hover:shadow-[0_0_30px_rgba(220,38,38,0.1)]">
+            <div class="mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blood-red transition-colors">Paxlovid
+                Interaction Finder</h3>
+              <div class="text-blood-red font-mono text-sm tracking-wide mb-4">Lead Frontend Engineer</div>
+              <p class="text-silver text-sm leading-relaxed mb-4">
+                Redesigned and rebuilt a professional-only drug interaction tool using the Adobe Franklin Suite, with a
+                strong focus on UX and data.
+              </p>
+            </div>
+
+            <div class="flex-grow mb-8">
+              <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-3">Highlights</h4>
+              <ul class="space-y-2 text-sm text-silver/80 list-disc pl-4 marker:text-blood-red">
+                <li>Collaborated on detailed planning based on Figma flows and interaction specs.</li>
+                <li>Led implementation, balancing custom blocks vs core Adobe Franklin blocks for maintainability.</li>
+                <li>Implemented analytics for key user events to provide stakeholder insights.</li>
+                <li>Integrated Excel data from SharePoint for up-to-date medical interaction data.</li>
+                <li>Coordinated QA and owned quality across dev/test phases.</li>
+              </ul>
+            </div>
+
+            <div class="pt-6 border-t border-charcoal/50 mt-auto">
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-silver">
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">Adobe
+                  Franklin</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">JavaScript</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">React
+                  Patterns</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pfizer Unified Cart -->
+          <article
+            class="group relative bg-gunmetal border border-charcoal hover:border-blood-red p-8 rounded-2xl transition-all duration-300 flex flex-col h-full hover:shadow-[0_0_30px_rgba(220,38,38,0.1)]">
+            <div class="mb-6">
+              <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blood-red transition-colors">Pfizer Unified
+                Cart</h3>
+              <div class="text-blood-red font-mono text-sm tracking-wide mb-4">Senior React Engineer</div>
+              <p class="text-silver text-sm leading-relaxed mb-4">
+                Unified the cart and checkout experience for healthcare professionals ordering samples and educational
+                content.
+              </p>
+            </div>
+
+            <div class="flex-grow mb-8">
+              <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-3">Highlights</h4>
+              <ul class="space-y-2 text-sm text-silver/80 list-disc pl-4 marker:text-blood-red">
+                <li>Implemented a multi-step React-based checkout flow with shipping, auth, and review.</li>
+                <li>Built reusable components aligned to design system using StencilJS and Storybook.</li>
+                <li>Integrated Adobe Analytics to track funnel progression and drop-offs.</li>
+                <li>Streamlined UX to reduce steps and improve clarity for HCPs.</li>
+              </ul>
+            </div>
+
+            <div class="pt-6 border-t border-charcoal/50 mt-auto">
+              <div class="flex flex-wrap gap-2 text-xs font-mono text-silver">
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">React</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">TypeScript</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">StencilJS</span>
+                <span
+                  class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">Storybook</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="contracts" class="py-24 px-6 relative overflow-hidden">
+      <!-- Decorative background line -->
+      <div
+        class="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-blood-red/30 to-transparent -z-10">
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="mb-16 text-center">
+          <div
+            class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-blood-red uppercase border border-blood-red/30 bg-blood-red/10 rounded-sm">
+            My Journey
+          </div>
+          <h2 class="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4">FROM .NET TO REACT & AI</h2>
+          <p class="text-silver max-w-xl mx-auto">
+            A story of continuous evolution: Backend foundations → Frontend discovery → Full-stack AI Engineering.
+          </p>
+        </div>
+
+        <div class="relative space-y-12">
+
+          <!-- Phase 5 -->
+          <div class="relative pl-8 md:pl-0">
+            <!-- Timeline dot -->
+            <div
+              class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] top-6 w-2.5 h-2.5 bg-blood-red rounded-full ring-4 ring-onyx z-10 animate-pulse">
+            </div>
+
+            <div class="md:flex md:justify-between md:items-start group">
+              <!-- Helper text (Left/Top) -->
+              <div class="md:w-5/12 md:text-right md:pr-12 mb-2 md:mb-0">
+                <span
+                  class="inline-block py-1 px-2 rounded bg-charcoal/50 text-blood-red font-mono text-sm tracking-widest border border-charcoal mb-2">
+                  Phase 5 · Present
+                </span>
+                <h3 class="text-xl font-bold text-white group-hover:text-blood-red transition-colors">Full-stack &
+                  AI-driven Engineer</h3>
+                <div class="text-zinc-500 text-sm font-mono mt-1">NewPage Solutions</div>
+              </div>
+
+              <!-- Content (Right/Bottom) -->
+              <div class="md:w-5/12 md:pl-12">
+                <p class="text-silver/90 text-sm leading-relaxed mb-3">
+                  Evolved into a complete developer owning features end-to-end. I integrate modern frontend (React/RN)
+                  with backend services, databases, and AI tools.
+                </p>
+                <div class="text-zinc-400 text-xs italic border-l-2 border-blood-red pl-3">
+                  "I leverage AI heavily across architecture, coding, and delivery to build resilient, full-stack
+                  systems."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="relative pl-8 md:pl-0">
+            <div
+              class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] top-6 w-2.5 h-2.5 bg-zinc-600 group-hover:bg-blood-red transition-colors rounded-full ring-4 ring-onyx z-10">
+            </div>
+            <div class="md:flex md:justify-between md:items-start group">
+              <div class="md:w-5/12 md:text-right md:pr-12 mb-2 md:mb-0">
+                <span
+                  class="inline-block py-1 px-2 rounded bg-charcoal/50 text-zinc-400 font-mono text-sm tracking-widest border border-charcoal mb-2">
+                  Phase 4
+                </span>
+                <h3 class="text-xl font-bold text-zinc-300 group-hover:text-white transition-colors">Architecture
+                  Mindset & Consulting</h3>
+                <div class="text-zinc-500 text-sm font-mono mt-1">Tavant · TechMill · Freelance</div>
+              </div>
+              <div class="md:w-5/12 md:pl-12">
+                <p class="text-silver/90 text-sm leading-relaxed mb-3">
+                  Shifted focus to system-level architecture and leading distributed teams. Learned to drop into new
+                  codebases quickly and drive delivery for clients like World Bank.
+                </p>
+                <div class="text-zinc-500 text-xs italic border-l-2 border-zinc-700 pl-3">
+                  "Learned to think at a system level, not just component level."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="relative pl-8 md:pl-0">
+            <div
+              class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] top-6 w-2.5 h-2.5 bg-zinc-600 group-hover:bg-blood-red transition-colors rounded-full ring-4 ring-onyx z-10">
+            </div>
+            <div class="md:flex md:justify-between md:items-start group">
+              <div class="md:w-5/12 md:text-right md:pr-12 mb-2 md:mb-0">
+                <span
+                  class="inline-block py-1 px-2 rounded bg-charcoal/50 text-zinc-400 font-mono text-sm tracking-widest border border-charcoal mb-2">
+                  Phase 3
+                </span>
+                <h3 class="text-xl font-bold text-zinc-300 group-hover:text-white transition-colors">Frontend & Mobile
+                  Lead</h3>
+                <div class="text-zinc-500 text-sm font-mono mt-1">Span (Evry India)</div>
+              </div>
+              <div class="md:w-5/12 md:pl-12">
+                <p class="text-silver/90 text-sm leading-relaxed mb-3">
+                  Became a true frontend specialist and team lead. Mastered Angular 2.x and executed my first mobile
+                  project with Ionic, while mentoring junior devs.
+                </p>
+                <div class="text-zinc-500 text-xs italic border-l-2 border-zinc-700 pl-3">
+                  "Transitioned from contributor to leader, focused on modern web frameworks."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="relative pl-8 md:pl-0">
+            <div
+              class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] top-6 w-2.5 h-2.5 bg-zinc-600 group-hover:bg-blood-red transition-colors rounded-full ring-4 ring-onyx z-10">
+            </div>
+            <div class="md:flex md:justify-between md:items-start group">
+              <div class="md:w-5/12 md:text-right md:pr-12 mb-2 md:mb-0">
+                <span
+                  class="inline-block py-1 px-2 rounded bg-charcoal/50 text-zinc-400 font-mono text-sm tracking-widest border border-charcoal mb-2">
+                  Phase 2
+                </span>
+                <h3 class="text-xl font-bold text-zinc-300 group-hover:text-white transition-colors">Frontend Discovery
+                </h3>
+                <div class="text-zinc-500 text-sm font-mono mt-1">IMS Health (IQVIA)</div>
+              </div>
+              <div class="md:w-5/12 md:pl-12">
+                <p class="text-silver/90 text-sm leading-relaxed mb-3">
+                  First serious exposure to JavaScript and AngularJS 1.x. Realized I enjoyed building tangible user
+                  interfaces more than pure backend services.
+                </p>
+                <div class="text-zinc-500 text-xs italic border-l-2 border-zinc-700 pl-3">
+                  "Moved from 'only backend' into the browser world."
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Phase 1 -->
+          <div class="relative pl-8 md:pl-0">
+            <div
+              class="absolute left-[-5px] md:left-1/2 md:-ml-[5px] top-6 w-2.5 h-2.5 bg-zinc-600 group-hover:bg-blood-red transition-colors rounded-full ring-4 ring-onyx z-10">
+            </div>
+            <div class="md:flex md:justify-between md:items-start group">
+              <div class="md:w-5/12 md:text-right md:pr-12 mb-2 md:mb-0">
+                <span
+                  class="inline-block py-1 px-2 rounded bg-charcoal/50 text-zinc-400 font-mono text-sm tracking-widest border border-charcoal mb-2">
+                  Phase 1
+                </span>
+                <h3 class="text-xl font-bold text-zinc-300 group-hover:text-white transition-colors">Backend Foundations
+                </h3>
+                <div class="text-zinc-500 text-sm font-mono mt-1">Aditi Technologies</div>
+              </div>
+              <div class="md:w-5/12 md:pl-12">
+                <p class="text-silver/90 text-sm leading-relaxed mb-3">
+                  Started as a .NET developer. Built services, integrated databases, and learned how real systems run in
+                  production (IIS, SQL Server).
+                </p>
+                <div class="text-zinc-500 text-xs italic border-l-2 border-zinc-700 pl-3">
+                  "Laid the groundwork: data, services, deployment, and reliability."
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Equipment Section (Skills) -->
+    <section id="equipment" class="py-20 px-6 border-y border-charcoal bg-onyx">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-12 text-center">
+          <div
+            class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-blood-red uppercase border border-blood-red/30 bg-blood-red/10 rounded-sm">
+            Skills
+          </div>
+          <h2 class="text-3xl md:text-5xl font-bold text-white">Full‑stack with React expertise and AI integrations
+          </h2>
+          <p class="text-silver/70 mt-4 text-sm max-w-2xl mx-auto">
+            Arsenal of languages, frameworks, and tools deployed in production environments.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <!-- Frontend -->
+          <div class="bg-gunmetal/50 border border-charcoal p-6 rounded-lg">
+            <h3 class="text-white font-bold mb-4 flex items-center">
+              <span class="w-1.5 h-6 bg-blood-red mr-3 rounded-full"></span>
+              Frontend
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">React
+                (Native)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">TypeScript</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Next.js</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Angular
+                (1.x, 2.x)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">HTML5/CSS3/JS</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Tailwind
+                CSS</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">GSAP</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">StencilJS</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Storybook</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">D3.js</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">DurandalJS</span>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="bg-gunmetal/50 border border-charcoal p-6 rounded-lg">
+            <h3 class="text-white font-bold mb-4 flex items-center">
+              <span class="w-1.5 h-6 bg-blood-red mr-3 rounded-full"></span>
+              Backend
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Node.js</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Supabase
+                (Edge Functions)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">.NET
+                WebAPI (C#)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">REST/GraphQL</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Webhooks</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Cron
+                jobs</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Deno</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Entity
+                Framework</span>
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <div class="bg-gunmetal/50 border border-charcoal p-6 rounded-lg">
+            <h3 class="text-white font-bold mb-4 flex items-center">
+              <span class="w-1.5 h-6 bg-blood-red mr-3 rounded-full"></span>
+              Mobile
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Expo/React
+                Native</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Ionic</span>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div class="bg-gunmetal/50 border border-charcoal p-6 rounded-lg">
+            <h3 class="text-white font-bold mb-4 flex items-center">
+              <span class="w-1.5 h-6 bg-blood-red mr-3 rounded-full"></span>
+              Database
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">PostgreSQL</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">SQL
+                Server</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Cloud/DevOps -->
+          <div class="bg-gunmetal/50 border border-charcoal p-6 rounded-lg">
+            <h3 class="text-white font-bold mb-4 flex items-center">
+              <span class="w-1.5 h-6 bg-blood-red mr-3 rounded-full"></span>
+              Cloud/DevOps
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">AWS
+                (S3)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Docker</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">GitHub
+                Actions</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">CI/CD</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">IIS</span>
+            </div>
+          </div>
+
+          <!-- Integrations/AI -->
+          <div class="bg-gunmetal/50 border border-charcoal p-6 rounded-lg">
+            <h3 class="text-white font-bold mb-4 flex items-center">
+              <span class="w-1.5 h-6 bg-blood-red mr-3 rounded-full"></span>
+              Integrations/AI
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">OpenAI</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Stripe
+                (payments)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Persona
+                (identity)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">WISE
+                (currency)</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">ImageKit</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Google/FB
+                OAuth</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Magic
+                Link</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Claude</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Antigravity</span>
+              <span
+                class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver hover:border-blood-red transition-colors cursor-default">Email
+                workflows</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="street-cred" class="py-24 px-6 overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <div
+            class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-blood-red uppercase border border-blood-red/30 bg-blood-red/10 rounded-sm">
+            TESTIMONIALS
+          </div>
+          <h2 class="text-4xl md:text-5xl font-bold text-white">What colleagues and clients say</h2>
+        </div>
+
+        <!-- Carousel Container -->
+        <div id="testimonials-carousel" class="relative w-full">
+
+          <!-- Slides Wrapper -->
+          <div id="carousel-slides" class="overflow-hidden relative min-h-[400px] md:min-h-[350px]">
+            <!-- Slide 1 -->
+            <div
+              class="testimonial-slide absolute inset-0 transition-all duration-700 ease-in-out transform translate-x-0 opacity-100"
+              data-index="0">
+              <div class="grid md:grid-cols-2 gap-8 items-center h-full">
+                <blockquote
+                  class="p-8 bg-gunmetal/30 border-l-4 border-blood-red backdrop-blur-sm rounded-r-lg h-full flex flex-col justify-center">
+                  <p class="text-lg md:text-xl text-silver italic mb-6 leading-relaxed">
+                    "Namith delivers beyond what you're asked... documents features thoroughly... asks the right
+                    questions, suggests proactive solutions... makes the whole team more effective."
+                  </p>
+                  <footer>
+                    <div class="font-bold text-white text-lg">John Stiven Espinosa Velasquez</div>
+                    <div class="text-sm text-blood-red font-mono">Software Lead, E-commerce Solutions (2025)</div>
+                  </footer>
+                </blockquote>
+                <div class="hidden md:block p-8">
+                  <!-- Optional decorative element -->
+                  <div class="w-24 h-1 bg-blood-red mb-4"></div>
+                  <p class="text-zinc-500 text-sm max-w-sm">Proactive leadership and thorough documentation are
+                    hallmarks of my delivery process.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div
+              class="testimonial-slide absolute inset-0 transition-all duration-700 ease-in-out transform translate-x-full opacity-0"
+              data-index="1">
+              <div class="grid md:grid-cols-2 gap-8 items-center h-full">
+                <blockquote
+                  class="p-8 bg-gunmetal/30 border-l-4 border-blood-red backdrop-blur-sm rounded-r-lg h-full flex flex-col justify-center">
+                  <p class="text-lg md:text-xl text-silver italic mb-6 leading-relaxed">
+                    "15+ years of frontend experience... translates complex business requirements into scalable
+                    architecture... always willing to mentor and raise the technical bar."
+                  </p>
+                  <footer>
+                    <div class="font-bold text-white text-lg">Mohammed Safer Ali</div>
+                    <div class="text-sm text-blood-red font-mono">Data Management (NewPage, 2023)</div>
+                  </footer>
+                </blockquote>
+                <div class="hidden md:block p-8">
+                  <div class="w-24 h-1 bg-blood-red mb-4"></div>
+                  <p class="text-zinc-500 text-sm max-w-sm">Translating business needs into robust technical
+                    architecture is where I add the most value.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div
+              class="testimonial-slide absolute inset-0 transition-all duration-700 ease-in-out transform translate-x-full opacity-0"
+              data-index="2">
+              <div class="grid md:grid-cols-2 gap-8 items-center h-full">
+                <blockquote
+                  class="p-8 bg-gunmetal/30 border-l-4 border-blood-red backdrop-blur-sm rounded-r-lg h-full flex flex-col justify-center">
+                  <p class="text-lg md:text-xl text-silver italic mb-6 leading-relaxed">
+                    "Worked with Namith on a multi-year Pfizer project. Front-end work was excellent. I'd be happy to
+                    work with him again."
+                  </p>
+                  <footer>
+                    <div class="font-bold text-white text-lg">J Matthew Saunders</div>
+                    <div class="text-sm text-blood-red font-mono">Certified Scrum Master, Pfizer Project (2024)</div>
+                  </footer>
+                </blockquote>
+                <div class="hidden md:block p-8">
+                  <div class="w-24 h-1 bg-blood-red mb-4"></div>
+                  <p class="text-zinc-500 text-sm max-w-sm">Consistency through long-term engagements ensures project
+                    stability and success.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div
+              class="testimonial-slide absolute inset-0 transition-all duration-700 ease-in-out transform translate-x-full opacity-0"
+              data-index="3">
+              <div class="grid md:grid-cols-2 gap-8 items-center h-full">
+                <blockquote
+                  class="p-8 bg-gunmetal/30 border-l-4 border-blood-red backdrop-blur-sm rounded-r-lg h-full flex flex-col justify-center">
+                  <p class="text-lg md:text-xl text-silver italic mb-6 leading-relaxed">
+                    "Namith was lead developer... most reliable on the team. Very hard working, goes above and beyond."
+                  </p>
+                  <footer>
+                    <div class="font-bold text-white text-lg">Ray Madura</div>
+                    <div class="text-sm text-blood-red font-mono">Product Management Director - Life Sciences Cloud
+                      (2017)</div>
+                  </footer>
+                </blockquote>
+                <div class="hidden md:block p-8">
+                  <div class="w-24 h-1 bg-blood-red mb-4"></div>
+                  <p class="text-zinc-500 text-sm max-w-sm">Reliability is non-negotiable in mission-critical
+                    deployments.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div
+              class="testimonial-slide absolute inset-0 transition-all duration-700 ease-in-out transform translate-x-full opacity-0"
+              data-index="4">
+              <div class="grid md:grid-cols-2 gap-8 items-center h-full">
+                <blockquote
+                  class="p-8 bg-gunmetal/30 border-l-4 border-blood-red backdrop-blur-sm rounded-r-lg h-full flex flex-col justify-center">
+                  <p class="text-lg md:text-xl text-silver italic mb-6 leading-relaxed">
+                    "Technically strong... self-motivated, independent... knack for good impressions from customers and
+                    business heads."
+                  </p>
+                  <footer>
+                    <div class="font-bold text-white text-lg">Manjunath S</div>
+                    <div class="text-sm text-blood-red font-mono">Microsoft Big Data Advanced Analytics (2015)</div>
+                  </footer>
+                </blockquote>
+                <div class="hidden md:block p-8">
+                  <div class="w-24 h-1 bg-blood-red mb-4"></div>
+                  <p class="text-zinc-500 text-sm max-w-sm">Bridging the gap between technical execution and business
+                    goals.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div
+              class="testimonial-slide absolute inset-0 transition-all duration-700 ease-in-out transform translate-x-full opacity-0"
+              data-index="5">
+              <div class="grid md:grid-cols-2 gap-8 items-center h-full">
+                <blockquote
+                  class="p-8 bg-gunmetal/30 border-l-4 border-blood-red backdrop-blur-sm rounded-r-lg h-full flex flex-col justify-center">
+                  <p class="text-lg md:text-xl text-silver italic mb-6 leading-relaxed">
+                    "Genuine interest in tools/frameworks... recommendations exceed basic requirements... well-written
+                    and structured."
+                  </p>
+                  <footer>
+                    <div class="font-bold text-white text-lg">Björn Olson</div>
+                    <div class="text-sm text-blood-red font-mono">IT Architect, IQVIA (2015)</div>
+                  </footer>
+                </blockquote>
+                <div class="hidden md:block p-8">
+                  <div class="w-24 h-1 bg-blood-red mb-4"></div>
+                  <p class="text-zinc-500 text-sm max-w-sm">Passion for the craft drives higher quality standards.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div id="carousel-dots" class="absolute -bottom-8 left-0 right-0 flex justify-center space-x-3">
+            <button class="carousel-dot w-3 h-3 rounded-full transition-colors duration-300 bg-blood-red"
+              data-index="0"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full transition-colors duration-300 bg-charcoal hover:bg-silver"
+              data-index="1"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full transition-colors duration-300 bg-charcoal hover:bg-silver"
+              data-index="2"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full transition-colors duration-300 bg-charcoal hover:bg-silver"
+              data-index="3"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full transition-colors duration-300 bg-charcoal hover:bg-silver"
+              data-index="4"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full transition-colors duration-300 bg-charcoal hover:bg-silver"
+              data-index="5"></button>
+          </div>
+
+          <!-- Arrows -->
+          <button id="prev-slide"
+            class="absolute top-1/2 -left-4 md:-left-12 transform -translate-y-1/2 text-charcoal hover:text-blood-red transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-8 h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+          <button id="next-slide"
+            class="absolute top-1/2 -right-4 md:-right-12 transform -translate-y-1/2 text-charcoal hover:text-blood-red transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+              stroke="currentColor" class="w-8 h-8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-6 text-center text-zinc-600 text-sm border-t border-charcoal">
+      &copy; 2026 All rights reserved.
+    </footer>
+
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
