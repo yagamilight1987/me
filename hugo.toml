@@ -1,6 +1,6 @@
-baseURL = "https://yagamilight1987.github.io/"
+baseURL = "https://namith.agilifylabs.in/"
 languageCode = "en-us"
-title = "Namith Scindhia - The Code Don"
+title = "Namith Scindhia"
 
 [build]
   [build.buildStats]
