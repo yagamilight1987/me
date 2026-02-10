@@ -1,39 +1,33 @@
-import './style.css'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 gsap.registerPlugin(ScrollTrigger);
 
-
 // Horizontal Scroll for Testimonials
-document.addEventListener('DOMContentLoaded', () => {
-    const horizontalSections = gsap.utils.toArray(".horiz-gallery-wrapper");
+document.addEventListener('DOMContentLoaded', function () {
+    var horizontalSections = gsap.utils.toArray(".horiz-gallery-wrapper");
 
-    horizontalSections.forEach((sec: any) => {
-        const pinWrap = sec.querySelector(".horiz-gallery-strip");
+    horizontalSections.forEach(function (sec) {
+        var pinWrap = sec.querySelector(".horiz-gallery-strip");
         if (!pinWrap) return;
 
-        let pinWrapWidth: number;
-        let horizontalScrollLength: number;
+        var pinWrapWidth;
+        var horizontalScrollLength;
 
         function refresh() {
             pinWrapWidth = pinWrap.scrollWidth;
-            horizontalScrollLength = pinWrapWidth - window.innerWidth + 100; // Adding buffer
+            horizontalScrollLength = pinWrapWidth - window.innerWidth + 100;
         }
 
         refresh();
 
-        // Pinning and horizontal scrolling
         gsap.to(pinWrap, {
             scrollTrigger: {
                 scrub: true,
                 trigger: sec,
                 pin: sec,
                 start: "center center",
-                end: () => `+=${pinWrapWidth}`,
+                end: function () { return "+=" + pinWrapWidth; },
                 invalidateOnRefresh: true,
             },
-            x: () => -horizontalScrollLength,
+            x: function () { return -horizontalScrollLength; },
             ease: "none"
         });
 
@@ -42,29 +36,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // GSAP Animations
-document.addEventListener('DOMContentLoaded', () => {
-    const heroTitle = document.querySelector('#hero-title');
-    const heroSection = document.querySelector('#hero-section');
+document.addEventListener('DOMContentLoaded', function () {
+    var heroTitle = document.querySelector('#hero-title');
+    var heroSection = document.querySelector('#hero-section');
 
     if (!heroTitle || !heroSection) return;
 
-    const originalText = heroTitle.textContent || "Forward Deployed Engineer";
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
+    var originalText = heroTitle.textContent || "Forward Deployed Engineer";
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
 
-    // Since ScrambleTextPlugin is a Club GreenSock plugin, we'll implement a 
-    // lightweight custom version that works with standard GSAP for reliability.
-    function scramble(element: Element, newText: string) {
-        const duration = 2; // seconds
-
+    function scramble(element, newText) {
         gsap.to({}, {
-            duration: duration,
+            duration: 2,
             onUpdate: function () {
-                const progress = this.progress();
-                const revealIndex = Math.floor(newText.length * progress);
+                var progress = this.progress();
+                var revealIndex = Math.floor(newText.length * progress);
 
                 element.textContent = newText
                     .split("")
-                    .map((_, index) => {
+                    .map(function (_, index) {
                         if (index < revealIndex) {
                             return newText[index];
                         }
@@ -72,22 +62,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     })
                     .join("");
             },
-            onComplete: () => {
+            onComplete: function () {
                 element.textContent = newText;
             },
             ease: "none"
         });
     }
 
-    // Trigger animation when hero section is entered
     ScrollTrigger.create({
         trigger: heroSection,
         start: "top center",
-        onEnter: () => scramble(heroTitle, originalText),
-        onEnterBack: () => scramble(heroTitle, originalText),
+        onEnter: function () { scramble(heroTitle, originalText); },
+        onEnterBack: function () { scramble(heroTitle, originalText); },
     });
 
-    // Initial load animation
     gsap.from("#hero-section > div", {
         opacity: 0,
         y: 30,
@@ -97,9 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Scroll to Top Logic
-    const scrollTopBtn = document.getElementById('scroll-to-top');
+    var scrollTopBtn = document.getElementById('scroll-to-top');
     if (scrollTopBtn) {
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', function () {
             if (window.scrollY > 500) {
                 scrollTopBtn.classList.remove('opacity-0', 'translate-y-10', 'invisible');
                 scrollTopBtn.classList.add('opacity-100', 'translate-y-0', 'visible');
@@ -109,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        scrollTopBtn.addEventListener('click', () => {
+        scrollTopBtn.addEventListener('click', function () {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'

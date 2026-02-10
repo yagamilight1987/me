@@ -1,0 +1,15 @@
+{{ $prefix := "" }}
+{{ if not .IsHome }}{{ $prefix = "/" }}{{ end }}
+<nav class="fixed top-0 w-full z-50 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto p-6 flex items-center justify-center">
+    <div class="hidden md:flex space-x-8 text-sm font-medium tracking-wide uppercase text-silver">
+      <a href="{{ $prefix }}#hero-section" class="hover:text-blood-red transition-colors">Home</a>
+      <a href="{{ $prefix }}#profile" class="hover:text-blood-red transition-colors">About</a>
+      <a href="{{ $prefix }}#operations" class="hover:text-blood-red transition-colors">Projects</a>
+      <a href="{{ $prefix }}#contracts" class="hover:text-blood-red transition-colors">Experience</a>
+      <a href="{{ $prefix }}#equipment" class="hover:text-blood-red transition-colors">Skills</a>
+      <a href="{{ $prefix }}#street-cred" class="hover:text-blood-red transition-colors">Recommendations</a>
+      <a href="/blog/" class="hover:text-blood-red transition-colors">Blog</a>
+    </div>
+  </div>
+</nav>

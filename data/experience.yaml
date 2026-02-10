@@ -1,0 +1,39 @@
+- phase: 5
+  label: "Phase 5 · Present"
+  title: "Full-stack & AI-driven Engineer"
+  company: "NewPage Solutions"
+  description: "Evolved into a complete developer owning features end-to-end. I integrate modern frontend (React/RN) with backend services, databases, and AI tools."
+  quote: "I leverage AI heavily across architecture, coding, and delivery to build resilient, full-stack systems."
+  is_current: true
+
+- phase: 4
+  label: "Phase 4"
+  title: "Architecture Mindset & Consulting"
+  company: "Tavant · TechMill · Freelance"
+  description: "Shifted focus to system-level architecture and leading distributed teams. Learned to drop into new codebases quickly and drive delivery for clients like World Bank."
+  quote: "Learned to think at a system level, not just component level."
+  is_current: false
+
+- phase: 3
+  label: "Phase 3"
+  title: "Frontend & Mobile Lead"
+  company: "Span (Evry India)"
+  description: "Became a true frontend specialist and team lead. Mastered Angular 2.x and executed my first mobile project with Ionic, while mentoring junior devs."
+  quote: "Transitioned from contributor to leader, focused on modern web frameworks."
+  is_current: false
+
+- phase: 2
+  label: "Phase 2"
+  title: "Frontend Discovery"
+  company: "IMS Health (IQVIA)"
+  description: "First serious exposure to JavaScript and AngularJS 1.x. Realized I enjoyed building tangible user interfaces more than pure backend services."
+  quote: "Moved from 'only backend' into the browser world."
+  is_current: false
+
+- phase: 1
+  label: "Phase 1"
+  title: "Backend Foundations"
+  company: "Aditi Technologies"
+  description: "Started as a .NET developer. Built services, integrated databases, and learned how real systems run in production (IIS, SQL Server)."
+  quote: "Laid the groundwork: data, services, deployment, and reliability."
+  is_current: false

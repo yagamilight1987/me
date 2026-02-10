@@ -1,0 +1,30 @@
+{{ define "main" }}
+<article class="py-24 px-6 min-h-screen">
+  <div class="max-w-3xl mx-auto">
+    <a href="/blog/" class="text-blood-red text-sm font-mono hover:underline">&larr; Back to Blog</a>
+    <div class="mt-8 mb-12">
+      <time class="text-blood-red font-mono text-sm">{{ .Date.Format "2006-01-02" }}</time>
+      <h1 class="text-4xl md:text-5xl font-bold text-white mt-4 tracking-tight">{{ .Title }}</h1>
+      {{ with .Params.tags }}
+      <div class="flex flex-wrap gap-2 mt-4">
+        {{ range . }}
+        <span class="px-2 py-1 bg-onyx border border-charcoal rounded text-xs text-silver">{{ . }}</span>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="prose prose-invert prose-lg max-w-none
+                prose-headings:text-white prose-headings:font-bold
+                prose-p:text-silver prose-p:leading-relaxed
+                prose-a:text-blood-red prose-a:no-underline hover:prose-a:underline
+                prose-strong:text-white
+                prose-code:text-blood-red prose-code:bg-gunmetal prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded
+                prose-pre:bg-gunmetal prose-pre:border prose-pre:border-charcoal
+                prose-blockquote:border-blood-red prose-blockquote:text-silver/90
+                prose-li:text-silver">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ partial "footer.html" . }}
+{{ end }}

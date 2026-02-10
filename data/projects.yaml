@@ -1,0 +1,41 @@
+- name: "Fanova"
+  role: "Senior Software Engineer (React Native / Full-stack)"
+  description: "Modernizing a creator-focused mobile and web platform by migrating from Xano/Bubble to a scalable Expo + React Native stack with a robust backend on Supabase."
+  highlights:
+    - 'Led a full "lift-and-shift" migration of core user flows, improving performance, scalability, and maintainability.'
+    - "Built a production-grade file upload experience using AWS S3, ImageKit, and Supabase Edge Functions."
+    - "Implemented OpenAI-powered content moderation to automatically review user-generated text."
+    - "Re-architected payments into Supabase Edge Functions (Deno), covering complex subscription models."
+    - "Integrated Persona for identity verification and WISE for real-time FX quotes."
+    - "Designed dynamic email workflows using Supabase email webhooks."
+  tags: ["Expo", "React Native", "TypeScript", "Supabase", "AWS S3", "OpenAI"]
+
+- name: "newpage.io"
+  role: "Senior React / Frontend Engineer"
+  description: "Complete front-end rewrite of the marketing website to match a new design system and deliver high-quality animations and performance."
+  highlights:
+    - "Translated Figma designs into responsive, accessible pages using clean, semantic HTML."
+    - "Implemented smooth, high-impact animations and micro-interactions with GSAP."
+    - "Tuned layout, assets, and interaction patterns to significantly improve Lighthouse scores."
+  tags: ["React", "TypeScript", "GSAP", "Optimization"]
+
+- name: "Paxlovid Interaction Finder"
+  role: "Lead Frontend Engineer"
+  description: "Redesigned and rebuilt a professional-only drug interaction tool using the Adobe Franklin Suite, with a strong focus on UX and data."
+  highlights:
+    - "Collaborated on detailed planning based on Figma flows and interaction specs."
+    - "Led implementation, balancing custom blocks vs core Adobe Franklin blocks for maintainability."
+    - "Implemented analytics for key user events to provide stakeholder insights."
+    - "Integrated Excel data from SharePoint for up-to-date medical interaction data."
+    - "Coordinated QA and owned quality across dev/test phases."
+  tags: ["Adobe Franklin", "JavaScript", "React Patterns", "Analytics"]
+
+- name: "Pfizer Unified Cart"
+  role: "Senior React Engineer"
+  description: "Unified the cart and checkout experience for healthcare professionals ordering samples and educational content."
+  highlights:
+    - "Implemented a multi-step React-based checkout flow with shipping, auth, and review."
+    - "Built reusable components aligned to design system using StencilJS and Storybook."
+    - "Integrated Adobe Analytics to track funnel progression and drop-offs."
+    - "Streamlined UX to reduce steps and improve clarity for HCPs."
+  tags: ["React", "TypeScript", "StencilJS", "Storybook"]

@@ -1,0 +1,18 @@
+baseURL = "https://yagamilight1987.github.io/"
+languageCode = "en-us"
+title = "Namith Scindhia - The Code Don"
+
+[build]
+  [build.buildStats]
+    enable = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+[params]
+  description = "Forward Deployed Engineer"

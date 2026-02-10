@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="bg-onyx text-silver font-sans antialiased selection:bg-blood-red selection:text-white">
+  {{ partial "nav.html" . }}
+  <div id="app">
+    {{ block "main" . }}{{ end }}
+  </div>
+  {{ partial "scroll-to-top.html" . }}
+  {{ partial "scripts.html" . }}
+</body>
+</html>

@@ -1,0 +1,56 @@
+- name: "Frontend"
+  items:
+    - "React (Native)"
+    - "TypeScript"
+    - "Next.js"
+    - "Angular (1.x, 2.x)"
+    - "HTML5/CSS3/JS"
+    - "Tailwind CSS"
+    - "GSAP"
+    - "StencilJS"
+    - "Storybook"
+    - "D3.js"
+    - "DurandalJS"
+
+- name: "Backend"
+  items:
+    - "Node.js"
+    - "Supabase (Edge Functions)"
+    - ".NET WebAPI (C#)"
+    - "REST/GraphQL"
+    - "Webhooks"
+    - "Cron jobs"
+    - "Deno"
+    - "Entity Framework"
+
+- name: "Mobile"
+  items:
+    - "Expo/React Native"
+    - "Ionic"
+
+- name: "Database"
+  items:
+    - "PostgreSQL"
+    - "SQL Server"
+    - "MySQL"
+
+- name: "Cloud/DevOps"
+  items:
+    - "AWS (S3)"
+    - "Docker"
+    - "GitHub Actions"
+    - "CI/CD"
+    - "IIS"
+
+- name: "Integrations/AI"
+  items:
+    - "OpenAI"
+    - "Stripe (payments)"
+    - "Persona (identity)"
+    - "WISE (currency)"
+    - "ImageKit"
+    - "Google/FB OAuth"
+    - "Magic Link"
+    - "Claude"
+    - "Antigravity"
+    - "Email workflows"

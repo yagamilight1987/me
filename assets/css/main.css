@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "../../layouts";
+@source "../../content";
 
 @theme {
     --font-sans: 'Space Grotesk', system-ui, sans-serif;

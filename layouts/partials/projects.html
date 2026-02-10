@@ -1,0 +1,47 @@
+<section id="operations" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="mb-16">
+      <div
+        class="inline-block px-3 py-1 mb-4 text-xs font-bold tracking-widest text-blood-red uppercase border border-blood-red/30 bg-blood-red/10 rounded-sm">
+        Projects
+      </div>
+      <h2 class="text-4xl md:text-6xl font-bold tracking-tight text-white">ENGINEERING OPERATIONS</h2>
+      <p class="mt-4 text-silver max-w-xl">
+        High-impact technical solutions deployed in complex environments.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {{ range site.Data.projects }}
+      <article
+        class="group relative bg-gunmetal border border-charcoal hover:border-blood-red p-8 rounded-2xl transition-all duration-300 flex flex-col h-full hover:shadow-[0_0_30px_rgba(220,38,38,0.1)]">
+        <div class="mb-6">
+          <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-blood-red transition-colors">{{ .name }}</h3>
+          <div class="text-blood-red font-mono text-sm tracking-wide mb-4">{{ .role }}</div>
+          <p class="text-silver text-sm leading-relaxed mb-4">
+            {{ .description }}
+          </p>
+        </div>
+
+        <div class="flex-grow mb-8">
+          <h4 class="text-xs font-bold text-zinc-500 uppercase tracking-widest mb-3">Highlights</h4>
+          <ul class="space-y-2 text-sm text-silver/80 list-disc pl-4 marker:text-blood-red">
+            {{ range .highlights }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+
+        <div class="pt-6 border-t border-charcoal/50 mt-auto">
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-silver">
+            {{ range .tags }}
+            <span
+              class="px-2 py-1 bg-onyx border border-charcoal rounded hover:border-blood-red/50 transition-colors">{{ . }}</span>
+            {{ end }}
+          </div>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
